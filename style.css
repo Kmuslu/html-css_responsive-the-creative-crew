@@ -1,0 +1,132 @@
+body {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.main-container {
+    margin:0px;
+    display: flex;
+    flex-direction:column;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto; 
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    margin: 10px ;
+    /* border: 1px solid blue; */
+    margin: 30px 30px 50px;
+}
+
+.header-left {
+    width: 33%;
+    /* align-items: center;
+    justify-content:center; */
+    text-align:center;
+    /* border:1px solid red; */
+    display:flex;
+    font-family: "PT Serif", serif;
+}
+
+.header-right {
+    width: 50%;
+    /* border: 1px solid red;  */
+}
+
+.header-right-heading {
+    font-family: "PT Serif", serif;
+    width:50%;
+    font-weight: bold;
+    font-size: large;
+    /* border:1px solid black; */
+    margin: 1em;
+}
+.header-right-intro{
+    width:50%;
+    margin: 1em;
+}
+
+.img-container{
+    margin: 30px 30px 50px;
+    padding:0px;
+    /* box-sizing: border-box; */
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap:5%;
+    /* border: 1px solid purple; */
+
+}
+
+.img-job{
+display:flex;
+}
+
+.employee .job{
+writing-mode: vertical-rl;
+ float:right;
+  margin: 5px;
+}
+.employee > .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#employee1, #employee3, #employee4,#employee6{
+    padding-bottom: 100px;
+}
+
+#employee2,#employee5 {
+    padding-top: 100px;
+}
+
+img {
+    border-radius: 10px;
+    /* box-shadow: 3px 6px #3a2626; */
+}
+img:hover{
+    box-shadow: 3px 6px #c2b8b8;
+}
+
+@media (max-width: 860px) {
+    .header {
+        flex-direction: column;
+    }
+    .header-left, .header-right{
+        display:block;
+        width:100%;
+        height:auto;
+    } 
+    .header-right-intro{
+        width:100%; 
+    }
+    .header-right-heading {
+        width:100%;
+    
+    }
+    .img-container {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+/* 
+@media (min-width:860px) and (max-width: 1670px){
+    .main-container{
+        width:100%;
+        height:auto;
+    }
+} */
+
+/* @media only screen and (max-width: 859px) and (min-width: 530px)
+html {
+    font-size: 11px;
+}
+
+@media only screen and (max-width: 859px) and (min-width: 530px)
+main div {
+    width: 35%;
+} */
